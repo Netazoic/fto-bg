@@ -1,0 +1,6 @@
+[submodule "src/com/netazoic/Ent"]
+	path = src/com/netazoic/Ent
+	url = https://github.com/Netazoic/Ent.git
+[submodule "src/com/netazoic/Todos"]
+	path = src/com/netazoic/Todos
+	url = https://github.com/Netazoic/Todos.git

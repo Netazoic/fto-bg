@@ -1,0 +1,3 @@
+APP_HOME = /usr/local/webapps/dsmportal/java
+TOMCAT_HOME = /usr/tomcat
+JAVAC_LOC = /usr/bin/javac

@@ -1,0 +1,14 @@
+	<servlet>
+		<servlet-name>FTO</servlet-name>
+		<servlet-class>com.netazoic.fto.FTO</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FTO</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FTO</servlet-name>
+		<url-pattern>/home/*</url-pattern>
+	</servlet-mapping>
+
