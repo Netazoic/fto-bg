@@ -8,20 +8,38 @@
         <meta name="description" content="Free The Oppressed">
         <link rel="stylesheet" href="/css/home.css">
     </head>
-    <body>
-        <!--
-            WE'LL NEED TO COME UP WITH A LOGO TO REPLACE THIS:
-        -->
+    
+    <body class="page-container">
+    <div class="header-container">
+    {{> _include/Header.hbs}}
+    
+    </div>
+		<div class="slide-container" ></div>
         <div class="container">
-        <h2>Free The Oppressed</h2> 
+	        <h2>Free The Oppressed</h2> 
         </div>
-        <div class="containerwhite">
-        Hello World! This is FTO.
+        <div class="caption-container">
+	        Hello World! This is FTO. 
+	        <div id="date-stamp"></div>
+        </div>
         
-        <script>
+    <div class="footer-container">
+	 {{> _include/Footer.hbs}}
+	</div>
+<script>
+// Slideshow with granular control
+$('div.slide-container').backstretch([
+  { url: '/img/slides/eliya_first_ranger.jpg', duration: 3000, fade: 2500, alignY: 0.2 },
+  { url: '/img/slides/Grand Teton.jpeg', duration: 3000, fade:2500 },
+  { url: '/img/slides/relief team leader.jpg', duration: 3000, fade: 2500 }
+]);
+
+$(function(data){
         var date = new Date();
-        document.write ("<p>Time is: " + date);
-        </script>
-        </div>
- 
+        $("#date-stamp").html("<p>Time is: " + date);
+});
+</script>
+
 </html>
+
+

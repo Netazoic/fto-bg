@@ -56,7 +56,9 @@ public class FTO extends ServENT{
 							throws IOException, Exception {
 				String tPath = HOME_NTP.Home.ntpPath;
 				Map<String,Object> map = new HashMap<String,Object>();
-				parser.parseOutput(map, tPath, response.getWriter());
+				//parser.parseOutput(map, tPath, response.getWriter());
+				parser.parseTest(map,tPath,response.getWriter());
+
 			}	
 	}
 }
