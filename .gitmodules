@@ -4,3 +4,6 @@
 [submodule "src/com/netazoic/Todos"]
 	path = src/com/netazoic/Todos
 	url = https://github.com/Netazoic/Todos.git
+[submodule "src/hbs"]
+	path = src/hbs
+	url = https://github.com/jknack/handlebars.java.git
