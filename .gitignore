@@ -8,3 +8,5 @@ www/WEB-INF/web.xml
 www/WEB-INF/classes/
 www/WEB-INF/lib
 build/report
+node_modules
+Gruntfile.js
