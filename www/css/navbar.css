@@ -1,7 +1,9 @@
+
 .navbar-default {
     background-color: rgba(100,100,100,0.2);
     border-color: #e7e7e7;
 }
+
 
 @media (min-width: 768px)
 .navbar {
@@ -15,14 +17,11 @@
     border: 1px solid transparent;
 }
 
-.navbar  li  a:hover, .navbar  li  a:focus{
-	
-	    background-color: rgba(200,200,200,0.5);
-}
 
-.navbar-default .navbar-nav  li > a:hover, .navbar-default .navbar-nav  li  a:focus {
+
+.navbar-default .navbar-nav  li  a:hover, .navbar-default .navbar-nav  li  a:focus {
     color: white;
-    background-color: transparent;
+    background-color: rgba(200,200,200,0.5);
 }
 
 
@@ -30,4 +29,18 @@
      padding-top: 5px; 
      padding-bottom: 5px; 
      font-size:1.1em;
+}
+
+@media (min-width: 768px)
+.container  .navbar-header, .container-fluid  .navbar-header, .container  .navbar-collapse, .container-fluid .navbar-collapse {
+     margin-right: -15px;
+     margin-left: -15px; 
+}
+
+@media (min-width: 768px)
+nav.navbar-default div.container-fluid {
+    padding-right: 2px;
+    padding-left: 2px; 
+    margin-right: auto; 
+    margin-left: auto;
 }

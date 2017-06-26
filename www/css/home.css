@@ -57,7 +57,7 @@ div.caption-container{
 	z-index:10;
 	position:absolute;
 	font-size:4em;
-	top: 50%;
+	top: 30%;
 	left:20%;
 	height:auto;
 	width:60%;
@@ -68,6 +68,11 @@ div.caption-container{
 	box-shadow: 0 0 2px rgba(100,100,100,0.07);
 	padding:10px;
 	text-align:center;
+}
+
+@media (min-width: 768px)
+div.caption-container{
+	top:50%;
 }
 
 div.slide-container {

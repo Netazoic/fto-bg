@@ -5,7 +5,7 @@ var slides = [
   { url: '/img/slides/relief team leader.jpg', id:"good_news", alt:"good_news" },
   { url: '/img/slides/families run across the road.jpg', id:"freedom", alt:'freedom'},
   { url: '/img/slides/Grand Teton.jpeg', id:"sight", alt:"sight" },
-  { url: '/img/slides/eliya_first_ranger.jpg',id:"set_opressed_free", alt:"set_opressed_free" },
+  { url: '/img/slides/eliya_first_ranger.jpg',id:"set_oppressed_free", alt:"set_oppressed_free" },
   { url: 'img/slides/DERescuesGirlMosul2017.JPG', id:"FTO", alt:'FTO', duration:8000},
   { url: '/img/slides/black.png', id:'black', alt:'FTO'}
 ]
@@ -17,8 +17,8 @@ var slideCaptions = [
       {id: 'good_news', caption:"To proclaim good news <br/>to the poor"},
       {id: 'freedom', caption:"To proclaim freedom<br/> for the prisoners"},
       {id: 'sight', caption:"And recovery of sight <br/> for the blind"},
-      {id: 'set_opressed_free', caption:"To set the opressed free"},
-      {id: 'FTO', caption:"Free The Opressed"}
+      {id: 'set_oppressed_free', caption:"To set the oppressed free"},
+      {id: 'FTO', caption:"Free The Oppressed"}
       ]
                      
 $('div.slide-container').backstretch(slides, {duration:7000,fade:4000});                     
