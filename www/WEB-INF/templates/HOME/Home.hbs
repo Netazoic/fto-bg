@@ -11,69 +11,21 @@
     
     <body >
     <div class="page-container">
+
     <div class="header-container">
     {{> _include/Header.hbs}}
-    
     </div>
 		<div class="slide-container" ></div>
-        <div class="caption-container">  </div>
-        
+        <div class="caption-container" style="display:none;">  </div>
+
     <div class="footer-container">
 	 {{> _include/Footer.hbs}}
 	</div>
+
 	</div>
 	</body>
 
-<script>
-// Slideshow with granular control
-var slides = [
-  { url: '/img/slides/children-pray-candelight.jpg', alt:'spirit_of_the_lord'},
-  { url: '/img/slides/eliya_first_ranger.jpg',id:"eliya", alt:"good_news" },
-  { url: '/img/slides/families run across the road.jpg', alt:'freedom'},
-  { url: '/img/slides/Grand Teton.jpeg', id:"grand_teton", alt:"sight" },
-  { url: '/img/slides/relief team leader.jpg', alt:"set_opressed_free" },
-  { url: 'img/slides/DERescuesGirlMosul2017.JPG', alt:'FTO', duration:10000}
-]
-
-
-var slideCaptions = [
-                     
-      {id: 'spirit_of_the_lord', caption:"The Spirit of the Lord is upon me"},
-      {id: 'good_news', caption:"To Proclaim good news to the poor"},
-      {id: 'freedom', caption:"To proclaim freedom for the prisoners"},
-      {id: 'sight', caption:"And recovery of sight for the blind"},
-      {id: 'set_opressed_free', caption:"To set the opressed free"},
-      {id: 'FTO', caption:"Free The Opressed"}
-      ]
-                     
-$('div.slide-container').backstretch(slides, {duration:7000,fade:4000});                     
-
-$(function(data){
-        var date = new Date();
-        $("#date-stamp").html("<p>Time is: " + date);
-        
-        var caption = slideCaptions[0];
-        switchCaption(caption.caption);
-        
-        $(window).on("backstretch.before", function (e, instance, idx) {
-  			//get the caption
-  			var caption = slideCaptions[idx];
-  			switchCaption(caption.caption);
-  		});
-  		
-
-});
-
-function switchCaption(captionText){
-	var $cap = $("div.caption-container");
-	$cap.fadeOut(1500, complete);
-
-	function complete(){
-	    $cap.html(captionText).fadeIn(2500);
-	}
-}
-
-</script>
+{{> _include/SlideShow.js }}
 
 </html>
 

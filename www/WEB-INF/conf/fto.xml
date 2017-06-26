@@ -6,9 +6,17 @@
 	<servlet-mapping>
 		<servlet-name>FTO</servlet-name>
 		<url-pattern>/home</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>FTO</servlet-name>
 		<url-pattern>/home/*</url-pattern>
+		<url-pattern>/about</url-pattern>
+    	<url-pattern>/donate</url-pattern>
 	</servlet-mapping>
 
+
+<error-page>
+	  <error-code>500</error-code>
+	  <location>/html/errors/500.html</location>
+</error-page>
+<error-page>
+	  <error-code>404</error-code>
+	  <location>/html/errors/404.html</location>
+</error-page>

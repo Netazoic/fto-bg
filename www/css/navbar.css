@@ -1,0 +1,33 @@
+.navbar-default {
+    background-color: rgba(100,100,100,0.2);
+    border-color: #e7e7e7;
+}
+
+@media (min-width: 768px)
+.navbar {
+    border-radius: 1px; 
+}
+
+.navbar {
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+}
+
+.navbar  li  a:hover, .navbar  li  a:focus{
+	
+	    background-color: rgba(200,200,200,0.5);
+}
+
+.navbar-default .navbar-nav  li > a:hover, .navbar-default .navbar-nav  li  a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+
+.navbar-nav  li  a {
+     padding-top: 5px; 
+     padding-bottom: 5px; 
+     font-size:1.1em;
+}
