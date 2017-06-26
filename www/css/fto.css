@@ -25,7 +25,12 @@ div.container {
 body.page-container {
 	opacity: 0.9;	
 	background-x: rgba(200, 54, 54, 0.1);
-	background: rbga(0,0,0,0.05);
+	background: rbga(100,100,100,0.05);
+}
+
+div.page-container{
+	opacity: 1.0;	
+	background: rbga(100,100,100,0.05);
 }
 
 div.footer-container {
@@ -74,6 +79,7 @@ div.caption-container{
 div.caption-container{
 	top:50%;
 }
+
 
 div.slide-container {
 	position:absolute;

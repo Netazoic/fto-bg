@@ -3,8 +3,9 @@
 var slides = [     
   { url: '/img/slides/children-pray-candelight.jpg', id:'spirit_of_the_lord', alt:'spirit_of_the_lord'},
   { url: '/img/slides/relief team leader.jpg', id:"good_news", alt:"good_news" },
-  { url: '/img/slides/families run across the road.jpg', id:"freedom", alt:'freedom'},
+  { url: '/img/slides/forced-labor-burma.jpg', id:"freedom", alt:'freedom'},
   { url: '/img/slides/Grand Teton.jpeg', id:"sight", alt:"sight" },
+  { url: '/img/slides/young-girl-released-from-ISIS.jpg'},
   { url: '/img/slides/eliya_first_ranger.jpg',id:"set_oppressed_free", alt:"set_oppressed_free" },
   { url: 'img/slides/DERescuesGirlMosul2017.JPG', id:"FTO", alt:'FTO', duration:8000},
   { url: '/img/slides/black.png', id:'black', alt:'FTO'}
@@ -21,7 +22,7 @@ var slideCaptions = [
       {id: 'FTO', caption:"Free The Oppressed"}
       ]
                      
-$('div.slide-container').backstretch(slides, {duration:7000,fade:4000});                     
+$('.slide-container').backstretch(slides, {duration:7000,fade:4000});                     
 
 $(function(data){
         var date = new Date();
