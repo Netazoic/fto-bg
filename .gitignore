@@ -10,3 +10,4 @@ www/WEB-INF/lib
 build/report
 node_modules
 Gruntfile.js
+/bin/
